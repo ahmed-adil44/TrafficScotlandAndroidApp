@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/salutation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scotland Traffic Updates"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="12dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/incidentsButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Unplanned Events"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/roadworksButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:text="Current Roadworks"
+            android:textAllCaps="false" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/recordCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select a category to load traffic updates"
+        android:textSize="16sp"
+        android:paddingTop="12dp"
+        android:paddingBottom="8dp" />
+
+    <EditText
+        android:id="@+id/searchRoad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search by road name (e.g. M8)"
+        android:inputType="text"
+        android:singleLine="true"
+        android:padding="12dp" />
+
+
+    <Spinner
+        android:id="@+id/distanceSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:contentDescription="Filter traffic events by distance from Glasgow" />
+
+
+
+    <ListView
+        android:id="@+id/trafficList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:dividerHeight="8dp" />
+
+    <TextView
+        android:id="@+id/acknowledgement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contains Traffic Scotland data"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:paddingTop="8dp" />
+
+</LinearLayout>
