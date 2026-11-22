@@ -35,13 +35,13 @@ android {
         buildConfigField(
             "String",
             "TRAFFIC_SCOTLAND_CLIENT_ID",
-            "\"${trafficProperties.getProperty("TRAFFIC_SCOTLAND_CLIENT_ID", "")}\""
+            "\"${trafficProperties.getProperty("TRAFFIC_SCOTLAND_CLIENT_ID", "KEY_HERE")}\""
         )
 
         buildConfigField(
             "String",
             "TRAFFIC_SCOTLAND_CLIENT_KEY",
-            "\"${trafficProperties.getProperty("TRAFFIC_SCOTLAND_CLIENT_KEY", "")}\""
+            "\"${trafficProperties.getProperty("TRAFFIC_SCOTLAND_CLIENT_KEY", "KEY_HERE")}\""
         )
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
